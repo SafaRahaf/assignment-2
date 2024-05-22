@@ -14,7 +14,9 @@ async function main() {
         });
     }
     catch (err) {
-        console.log(err);
+        console.error("Database connection error:", err);
+        process.exit(1);
     }
+    //s
 }
 main();
